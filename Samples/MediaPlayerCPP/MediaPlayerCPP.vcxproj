@@ -79,9 +79,10 @@
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
-      <AdditionalOptions>/bigobj /await %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/bigobj /await:strict %(AdditionalOptions)</AdditionalOptions>
       <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
     </ClCompile>
+    <Link />
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="FloatToDoubleConverter.h" />

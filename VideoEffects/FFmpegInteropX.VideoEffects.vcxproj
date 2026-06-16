@@ -29,6 +29,8 @@
     <UseWinUI>true</UseWinUI>
     <CppWinRTModernIDL>true</CppWinRTModernIDL>
     <FFmpegInteropXBuild>true</FFmpegInteropXBuild>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.17763.0</WindowsTargetPlatformMinVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <ItemGroup Label="ProjectConfigurations">
@@ -102,7 +104,7 @@
     <PlatformToolset>$(DefaultPlatformToolset)</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <GenerateManifest>false</GenerateManifest>
-    <DesktopCompatible>true</DesktopCompatible>
+    <DesktopCompatible Condition="'$(AppType)'=='Win32'">true</DesktopCompatible>
   </PropertyGroup>
   <PropertyGroup Condition="'$(ConfigType)'=='Debug'" Label="Configuration">
     <UseDebugLibraries>true</UseDebugLibraries>
@@ -146,7 +148,7 @@
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <DisableSpecificWarnings>28204;4635;4634</DisableSpecificWarnings>
       <GenerateXMLDocumentationFiles>true</GenerateXMLDocumentationFiles>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <SDLCheck>false</SDLCheck>
     </ClCompile>
     <Link>
