@@ -1,0 +1,33 @@
+{
+  "dependencies": [
+    {
+      "name": "ffmpeg",
+      "features": [
+        "avcodec",
+        "avdevice",
+        "avfilter",
+        "avformat",
+        "bzip2",
+        "freetype",
+        "iconv",
+        "lzma",
+        "mp3lame",
+        "openjpeg",
+        "openmpt",
+        "opus",
+        "snappy",
+        "soxr",
+        "speex",
+        "swresample",
+        "swscale",
+        "theora",
+        "vorbis",
+        "zlib",
+        "openssl",
+        "xml2",
+        "dav1d",
+        "webp"
+      ]
+    }
+  ]
+}
