@@ -1,0 +1,8 @@
+if(PORT MATCHES "^(harfbuzz)$")
+    set(VCPKG_CXX_FLAGS "-DWINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP")
+    set(VCPKG_C_FLAGS "-DWINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP")
+endif()
+
+if(PORT MATCHES "^(libass)$")
+    set(VCPKG_LINKER_FLAGS "WindowsApp.lib")
+endif()

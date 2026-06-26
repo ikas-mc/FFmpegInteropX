@@ -1,0 +1,55 @@
+{
+    "dependencies": [
+        {
+            "name": "ffmpeg",
+            "features": [
+                "avcodec",
+                "avdevice",
+                "avfilter",
+                "avformat",
+                "bzip2",
+                "freetype",
+                "iconv",
+                "lzma",
+                "mp3lame",
+                "openjpeg",
+                "openmpt",
+                "opus",
+                "snappy",
+                "soxr",
+                "speex",
+                "swresample",
+                "swscale",
+                "theora",
+                "vorbis",
+                "openssl",
+                "xml2",
+                "dav1d",
+                "webp",
+                "iconv",
+                "xml2",
+                "ass"
+            ]
+        },
+        {
+            "name": "curl",
+            "features": [
+                "ssl",
+                "brotli",
+                "http2",
+                "http3",
+                "httpsrr",
+                "non-http",
+                "openssl",
+                "idn",
+                "websockets"
+            ]
+        }
+    ],
+    "overrides": [
+        {
+            "name": "ffmpeg",
+            "version": "7.1.1"
+        }
+    ]
+}
